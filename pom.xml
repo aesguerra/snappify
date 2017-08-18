@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.minyo</groupId>
+    <artifactId>snappify</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <scala.binary.version>2.11</scala.binary.version>
+        <hadoop.version>2.7.3</hadoop.version>
+
+        <hbase.version>1.3.1</hbase.version>
+        <phoenix.version>4.8.2-HBase-1.2</phoenix.version>
+        <java.version>1.8</java.version>
+        <snappydata.version>2.0.3-2</snappydata.version>
+        <kafka.version>0.8.2.1</kafka.version>
+        <avro.version>1.7.7</avro.version>
+        <parquet.version>1.7.0</parquet.version>
+        <CodeCacheSize>512m</CodeCacheSize>
+    </properties>
+    <dependencies>
+        <!-- Snappydata -->
+        <dependency>
+            <groupId>io.snappydata</groupId>
+            <artifactId>snappydata-core_2.11</artifactId>
+            <version>0.9</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-core_2.11</artifactId>
+            <version>2.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-sql_${scala.binary.version}</artifactId>
+            <version>2.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-hive_${scala.binary.version}</artifactId>
+            <version>2.0.0</version>
+        </dependency>
+        <!--&lt;!&ndash; Hadoop &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.apache.hadoop</groupId>-->
+            <!--<artifactId>hadoop-client</artifactId>-->
+            <!--<version>${hadoop.version}</version>-->
+        <!--</dependency>-->
+        <!--&lt;!&ndash; HBase &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.apache.hbase</groupId>-->
+            <!--<artifactId>hbase-server</artifactId>-->
+            <!--<version>${hbase.version}</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.apache.hbase</groupId>-->
+            <!--<artifactId>hbase-client</artifactId>-->
+            <!--<version>${hbase.version}</version>-->
+        <!--</dependency>-->
+        <!--&lt;!&ndash; Finatra &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>com.twitter</groupId>-->
+            <!--<artifactId>finatra-http_2.11</artifactId>-->
+            <!--<version>2.8.0</version>-->
+        <!--</dependency>-->
+        <!--&lt;!&ndash; Joda &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>joda-time</groupId>-->
+            <!--<artifactId>joda-time</artifactId>-->
+            <!--<version>2.3</version>-->
+        <!--</dependency>-->
+        <!--&lt;!&ndash; Avro &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.apache.avro</groupId>-->
+            <!--<artifactId>avro-compiler</artifactId>-->
+            <!--<version>${avro.version}</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.apache.avro</groupId>-->
+            <!--<artifactId>avro-ipc</artifactId>-->
+            <!--<version>${avro.version}</version>-->
+        <!--</dependency>-->
+        <!--&lt;!&ndash; Parquet &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.apache.parquet</groupId>-->
+            <!--<artifactId>parquet-avro</artifactId>-->
+            <!--<version>${parquet.version}</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.apache.parquet</groupId>-->
+            <!--<artifactId>parquet-common</artifactId>-->
+            <!--<version>${parquet.version}</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.apache.parquet</groupId>-->
+            <!--<artifactId>parquet-column</artifactId>-->
+            <!--<version>${parquet.version}</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.apache.parquet</groupId>-->
+            <!--<artifactId>parquet-hadoop</artifactId>-->
+            <!--<version>${parquet.version}</version>-->
+        <!--</dependency>-->
+        <!--&lt;!&ndash; Redis &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>redis.clients</groupId>-->
+            <!--<artifactId>jedis</artifactId>-->
+            <!--<version>2.9.0</version>-->
+        <!--</dependency>-->
+        <!--&lt;!&ndash; MySQL &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>mysql</groupId>-->
+            <!--<artifactId>mysql-connector-java</artifactId>-->
+            <!--<version>5.1.21</version>-->
+        <!--</dependency>-->
+        <!--&lt;!&ndash; Typesafe Config&ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>com.typesafe</groupId>-->
+            <!--<artifactId>config</artifactId>-->
+            <!--<version>1.2.1</version>-->
+        <!--</dependency>-->
+    </dependencies>
+</project>
